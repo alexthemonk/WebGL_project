@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alex Liu</title>
+  </head>
+
+  <body onload="main()" onresize="drawResize()">
+    <canvas id="webgl">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <br>
+    <button onclick="changeAnimating()">Pause</button>
+    <button onclick="speedUp()">Faster</button>
+    <button onclick="speedDown()">Slower</button>
+    <br>
+    <button onclick="switchWorldLight()">World Light Switch</button>
+    <button onclick="switchDroneLight()">Drone Light Switch</button>
+    <br>
+    <button onclick="changeCam()">Change Camera</button>
+    <button onclick="changeShading()">Change Shading</button>
+    <button onclick="changeLighting()">Change Lighting</button>
+    
+
+    <p>
+      <h2>
+        User Instructions
+      </h2>
+      <a>Use WASD to move look around</a>
+      <br>
+      <a>Use arrow keys to move around</a>
+      <br>
+      <a>Click "Pause" to pause or resume animation. </a>
+      <br>
+      <a>For your little park, you have a visitor walking around, and also a drone flying around in the park</a>
+      <br>
+      <a>Click "World Light Switch" and "Drone Light Switch" to switch the world and drone light source on and off. </a>
+      <br>
+      <a>Click "Change Camera" to switch view between a first person view from the drone and third person view from the person. </a>
+      <br>
+      <a>Click "Change Shading" and "Change Lighting" to switch between two shading method and two lighting method. </a>
+    </p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat.js"></script>
+    <script src="lib/glmatrix.js"></script>
+    <script src="LiuShucheng_lib/shapes3Vert.js"></script>
+    <script src="LiuShucheng_lib/shapes7Vert.js"></script>
+    <script src="LiuShucheng_lib/view.js"></script>
+    <script src="LiuShucheng_lib/VBObox.js"></script>
+    <script src="LiuShucheng_lib/materials.js"></script>
+    <script src="LiuShucheng_lib/lights.js"></script>
+    <script src="LiuShucheng_ProjC.js"></script>
+  </body>
+</html>
